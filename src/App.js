@@ -3,14 +3,14 @@ import SearchIcon from './search.svg'
 import './App.css';
 import { useState, useEffect } from 'react';
 
-const API_URL = "http://ww.omdbapi.com?apikey="
-const movie1 = {
-  "Title": "Amazing Spyderman Syndrome",
-  "Year": "2012",
-  "imdbID": "tt2586634",
-  "Type": "movie",
-  "Poster": "N/A"
-}
+const API_URL = "http://ww.omdbapi.com?apikey=8e442973"
+// const movie1 = {
+//   "Title": "Amazing Spyderman Syndrome",
+//   "Year": "2012",
+//   "imdbID": "tt2586634",
+//   "Type": "movie",
+//   "Poster": "N/A"
+// }
 function App() {
   const [movies, setMovies] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
