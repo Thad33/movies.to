@@ -37,23 +37,22 @@ function App() {
       <img
         src= {SearchIcon}
         alt='search'
-        onClick={()=>searchMovies({searchTerm})}
+        onClick={()=>searchMovies(searchTerm)}
       />
       </div>
       {
         movies.lenght > 0 
         ? (
           <div className='container'>
-             {movies.map((movies)=>(
+             {movies.map((movie)=>(
               <Movies movie = {movie}/>
              ))}
           </div>
         
         ) : (
-          <div className='Empty'>No MoviesFound</div>
+          <div className='empty'>No MoviesFound</div>
         )
       }  
-      
     </div>
   );
 }
